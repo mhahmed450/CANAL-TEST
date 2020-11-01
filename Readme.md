@@ -13,13 +13,12 @@ la structure global du projet :
 ```Gherkin
 src
   + main
-    +java
-      +dto                        les modèles d’interfaçage avec l’api
-      +services                   les services d’appel des Api’s du backend 
   + test
     + java                        
-      +config                     Configuration de l’environnement                         
+      +config                     Configuration de l’environnement 
+      +dto                        les modèles d’interfaçage avec l’api
       +parameterType              les paramètres d’input
+      +services                   les services d’appel des Api’s du backend 
       +stepDefinition             les classes des différentes étapes du test à exécuter 
     + resources
       + features                  les fichiers features
@@ -60,10 +59,4 @@ Pour exécuter le projet, vous pouvez soit simplement exécuter la classe de tes
 Le sénario de test qui existe sous le dossier feature a été lancé  
 Un rapport du test généré  situés dans target / site / serenity / index.html  
 
-![Screenshot](img_report/Serenity.PNG)
-
-Des rapport plus detailée et interactif géneré par le plugin de cucumber-reporting dans target /  static  
-![Screenshot](img_report/Report1.PNG)
-![Screenshot](img_report/Report2.PNG)
-![Screenshot](img_report/Report3.PNG)
-![Screenshot](img_report/Report4.PNG)
+![Screenshot](Serenity.PNG)

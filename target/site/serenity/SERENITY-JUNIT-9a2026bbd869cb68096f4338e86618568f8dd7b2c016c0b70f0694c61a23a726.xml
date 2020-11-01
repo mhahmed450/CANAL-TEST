@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Modifier l'adresse d'un abonné" skipped="0" tests="2" time="0.3" timestamp="2020-10-30 11:19:39"><testcase name="Modification de l'adresse d'un abonné résidant en France sans ou avec date d'effet"><error message="RestTemplate must not be null" type="java.lang.IllegalArgumentException">RestTemplate must not be null</error><system-err>RestTemplate must not be null&#13;
+org.springframework.util.Assert.notNull(Assert.java:201)&#13;
+org.springframework.test.web.client.MockRestServiceServer.bindTo(MockRestServiceServer.java:133)&#13;
+org.springframework.test.web.client.MockRestServiceServer.createServer(MockRestServiceServer.java:165)&#13;
+com.testCanal.testCanal.stepDefinition.StepDefinitions.setup(StepDefinitions.java:55)&#13;
+</system-err></testcase></testsuite>

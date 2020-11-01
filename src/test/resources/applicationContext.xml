@@ -1,0 +1,2 @@
+<import resource="/applicationContext.xml" />
+<context:component-scan base-package="testCanal" />

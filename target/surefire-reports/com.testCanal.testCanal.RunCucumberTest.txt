@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.testCanal.testCanal.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.testCanal.testCanal.RunCucumberTest
+initializationError  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: path must exist: C:\Logiciels\test\testCanal1\testCanal\src\test\resources\features
+

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.testCanal.testCanal.TestCanalApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.651 s <<< FAILURE! - in com.testCanal.testCanal.TestCanalApplicationTests
+contextLoads  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.AbstractMethodError: ch.qos.logback.classic.pattern.EnsureExceptionHandling.process(Lch/qos/logback/core/Context;Lch/qos/logback/core/pattern/Converter;)V
+
