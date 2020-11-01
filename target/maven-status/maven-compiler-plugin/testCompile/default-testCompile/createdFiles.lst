@@ -1,0 +1,12 @@
+org\test\canal\stepDefinition\AbstractSteps.class
+org\test\canal\stepDefinition\EmployeeSteps.class
+org\test\canal\parameterTypes\Active.class
+org\test\canal\annotations\ServerHost.class
+org\test\canal\CucumberTest.class
+org\test\canal\config\TypeRegistryConfig$1.class
+org\test\canal\annotations\ServerPort.class
+org\test\canal\parameterTypes\Canal.class
+org\test\canal\config\TypeRegistryConfig.class
+org\test\canal\config\Config.class
+org\test\canal\config\SpringIntegrationTest.class
+org\test\canal\config\TypeRegistryConfig$Transformer.class
