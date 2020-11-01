@@ -60,7 +60,7 @@ Pour exécuter le projet, vous pouvez soit simplement exécuter la classe de tes
 Le sénario de test qui existe sous le dossier feature a été lancé  
 Un rapport du test généré  situés dans target / site / serenity / index.html  
 
-![Screenshot](Serenity.PNG)
+![Screenshot](img_report/Serenity.PNG)
 
 Des rapport plus detailée et interactif géneré par le plugin de cucumber-reporting dans target /  static  
 ![Screenshot](img_report/Report1.PNG)
