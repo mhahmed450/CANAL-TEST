@@ -7,7 +7,10 @@
     Alors l'adresse de l'abonné modifiée est enregistrée sur l'ensemble des contrats de l'abonné
     Et un mouvement de modification d'adresse est créé
     Exemples:
-      | canal | active
-      | FACE | inactive
-      | EC | active
+      | canal| active |
+      |FACE  |  active  |
+      |EC    |  inactive |
+
+
+
 
