@@ -94,6 +94,7 @@ public class SubscriptionSteps extends AbstractSteps {
         mockServer.verify();
 
         this.contractsSubscriberResponseDto.getContractDtos().forEach(contract -> {
+            assertEquals(contract.getAddress().getName(), subscriberDto.getMainAddress().getName());
             assertEquals(contract.getAddress().getStatus(), Status.fromText(active.getIsActive()).get());
         });
         assertEquals(this.contractsSubscriberResponseDto.getIdSubscriber(), this.subscriptionResponseDto.getId());
