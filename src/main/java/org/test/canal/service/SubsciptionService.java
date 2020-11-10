@@ -10,7 +10,9 @@ import org.springframework.http.MediaType;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
+
 import org.test.canal.dto.AddressDto;
+
 import org.test.canal.dto.MovementDto;
 import org.test.canal.dto.SubscriberDto;
 import org.test.canal.dto.requests.SubscriptionDto;
@@ -24,8 +26,10 @@ public class SubsciptionService {
 
     @Value("${url.subscription}")
     String subscriptionUrl;
+
     @Value("${url.getAddress}")
     String getAddressUrl;
+
     @Value("${url.getContractsBySubscriber}")
     String getContractsBySubscriberUrl;
     @Value("${url.movementCheck}")
@@ -41,6 +45,7 @@ public class SubsciptionService {
         HttpEntity<SubscriptionDto> entity = new HttpEntity<SubscriptionDto>(subscriptionDto,headers);
        return restTemplate.exchange(subscriptionUrl, HttpMethod.POST, entity, SubscriptionResponseDto.class).getBody();
     }
+
     public AddressDto getAddress(String canalName, Long subscriberId){
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));

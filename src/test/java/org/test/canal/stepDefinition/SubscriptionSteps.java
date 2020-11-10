@@ -37,10 +37,11 @@ import org.springframework.web.util.DefaultUriTemplateHandler;
 import org.springframework.web.util.UriTemplateHandler;
 import org.test.canal.utils.Status;
 
-public class EmployeeSteps extends AbstractSteps {
+public class SubscriptionSteps extends AbstractSteps {
     private Active active;
     private Canal canal;
     private SubscriberDto subscriberDto;
+
 
     @Autowired
     private RestTemplate restTemplate;
@@ -85,7 +86,6 @@ public class EmployeeSteps extends AbstractSteps {
 
     @Alors("l'adresse de l'abonné modifiée est enregistrée sur l'ensemble des contrats de l'abonné")
     public void l_adresse_de_l_abonné_modifiée_est_enregistrée_sur_l_ensemble_des_contrats_de_l_abonné() throws JsonProcessingException {
-
 
         // verifcation de changement d'adresse
         MockRestServiceServer mockServerGet = subscriptionServiceMock.getAddress( canal.getCanalName(), this.subscriptionResponseDto);

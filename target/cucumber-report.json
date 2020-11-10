@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4143600,
+              "duration": 3519400,
               "status": "passed"
             },
             "match": {
@@ -15,11 +15,11 @@
           },
           {
             "result": {
-              "duration": 6531044300,
+              "duration": 6156400,
               "status": "passed"
             },
             "match": {
-              "location": "EmployeeSteps.setup()"
+              "location": "SubscriptionSteps.setup()"
             }
           }
         ],
@@ -32,7 +32,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2272700,
+              "duration": 1077200,
               "status": "passed"
             },
             "line": 5,
@@ -44,13 +44,13 @@
                   "offset": 38
                 }
               ],
-              "location": "EmployeeSteps.un_abonné_avec_une_adresse_principale_en_france(String)"
+              "location": "SubscriptionSteps.un_abonné_avec_une_adresse_principale_en_france(String)"
             },
             "keyword": "Etant donné "
           },
           {
             "result": {
-              "duration": 162073400,
+              "duration": 119928700,
               "status": "passed"
             },
             "line": 6,
@@ -62,31 +62,31 @@
                   "offset": 25
                 }
               ],
-              "location": "EmployeeSteps.le_conseiller_connecté_à_modifie_l_adresse_de_l_abonné(String)"
+              "location": "SubscriptionSteps.le_conseiller_connecté_à_modifie_l_adresse_de_l_abonné(String)"
             },
             "keyword": "Lorsque "
           },
           {
             "result": {
-              "duration": 18642877100,
+              "duration": 7605200,
               "status": "passed"
             },
             "line": 7,
             "name": "l\u0027adresse de l\u0027abonné modifiée est enregistrée sur l\u0027ensemble des contrats de l\u0027abonné",
             "match": {
-              "location": "EmployeeSteps.l_adresse_de_l_abonné_modifiée_est_enregistrée_sur_l_ensemble_des_contrats_de_l_abonné()"
+              "location": "SubscriptionSteps.l_adresse_de_l_abonné_modifiée_est_enregistrée_sur_l_ensemble_des_contrats_de_l_abonné()"
             },
             "keyword": "Alors "
           },
           {
             "result": {
-              "duration": 6840200,
+              "duration": 5016300,
               "status": "passed"
             },
             "line": 8,
             "name": "un mouvement de modification d\u0027adresse est créé",
             "match": {
-              "location": "EmployeeSteps.un_mouvement_de_modification_d_adresse_est_créé()"
+              "location": "SubscriptionSteps.un_mouvement_de_modification_d_adresse_est_créé()"
             },
             "keyword": "Et "
           }
@@ -104,7 +104,7 @@
         "before": [
           {
             "result": {
-              "duration": 323900,
+              "duration": 355100,
               "status": "passed"
             },
             "match": {
@@ -113,11 +113,11 @@
           },
           {
             "result": {
-              "duration": 850524300,
+              "duration": 749000,
               "status": "passed"
             },
             "match": {
-              "location": "EmployeeSteps.setup()"
+              "location": "SubscriptionSteps.setup()"
             }
           }
         ],
@@ -130,7 +130,7 @@
         "steps": [
           {
             "result": {
-              "duration": 109000,
+              "duration": 54500,
               "status": "passed"
             },
             "line": 5,
@@ -142,13 +142,13 @@
                   "offset": 38
                 }
               ],
-              "location": "EmployeeSteps.un_abonné_avec_une_adresse_principale_en_france(String)"
+              "location": "SubscriptionSteps.un_abonné_avec_une_adresse_principale_en_france(String)"
             },
             "keyword": "Etant donné "
           },
           {
             "result": {
-              "duration": 3628300,
+              "duration": 2564300,
               "status": "passed"
             },
             "line": 6,
@@ -160,31 +160,31 @@
                   "offset": 25
                 }
               ],
-              "location": "EmployeeSteps.le_conseiller_connecté_à_modifie_l_adresse_de_l_abonné(String)"
+              "location": "SubscriptionSteps.le_conseiller_connecté_à_modifie_l_adresse_de_l_abonné(String)"
             },
             "keyword": "Lorsque "
           },
           {
             "result": {
-              "duration": 8211856800,
+              "duration": 3993600,
               "status": "passed"
             },
             "line": 7,
             "name": "l\u0027adresse de l\u0027abonné modifiée est enregistrée sur l\u0027ensemble des contrats de l\u0027abonné",
             "match": {
-              "location": "EmployeeSteps.l_adresse_de_l_abonné_modifiée_est_enregistrée_sur_l_ensemble_des_contrats_de_l_abonné()"
+              "location": "SubscriptionSteps.l_adresse_de_l_abonné_modifiée_est_enregistrée_sur_l_ensemble_des_contrats_de_l_abonné()"
             },
             "keyword": "Alors "
           },
           {
             "result": {
-              "duration": 3812300,
+              "duration": 1849300,
               "status": "passed"
             },
             "line": 8,
             "name": "un mouvement de modification d\u0027adresse est créé",
             "match": {
-              "location": "EmployeeSteps.un_mouvement_de_modification_d_adresse_est_créé()"
+              "location": "SubscriptionSteps.un_mouvement_de_modification_d_adresse_est_créé()"
             },
             "keyword": "Et "
           }

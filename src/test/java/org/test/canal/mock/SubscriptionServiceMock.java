@@ -40,6 +40,7 @@ public class SubscriptionServiceMock {
     private String subscriptionUrl;
     @Value("${uri.getAddress}")
     private String getAddress;
+
     @Value("${uri.movementCheck}")
     private String movementCheckUrl;
     @Value("${uri.getContractsBySubscriber}")
@@ -65,6 +66,7 @@ public class SubscriptionServiceMock {
 
         return mockServer;
     }
+
     public MockRestServiceServer getAddress(String canalName, SubscriptionResponseDto subscriptionResponseDto) throws JsonProcessingException {
 
         AddressDto addressResponseDto = new AddressDto(125478L, "test_address", subscriptionResponseDto.getAddressDto().getStatus());
@@ -79,6 +81,7 @@ public class SubscriptionServiceMock {
 
         return mockServer;
     }
+
 
     public MockRestServiceServer getContractBySubscriber(Long idSubscriber) throws JsonProcessingException {
         AddressDto addressDto = this.subscriptionResponseDto.getAddressDto();
