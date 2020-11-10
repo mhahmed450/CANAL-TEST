@@ -75,12 +75,15 @@ public class SubscriptionSteps extends AbstractSteps {
     @Lorsque("le conseiller connecté à {string} modifie l'adresse de l'abonné")
     public void le_conseiller_connecté_à_modifie_l_adresse_de_l_abonné(String canalName) throws JsonProcessingException {
         this.canal = new Canal(canalName);
+        // modification status adresse
+        this.subscriberDto.getMainAddress().switchStatus();
+
         MockRestServiceServer mockServer = subscriptionServiceMock.modifyAddress( this.canal.getCanalName(), this.subscriberDto);
         this.subscriptionResponseDto = subsciptionService.modifyAddress(canal.getCanalName(), this.subscriberDto);
         mockServer.verify();
         // test implicit de changement d'adresse : la reponse de de modification d'adresse
         assertEquals(this.subscriptionResponseDto.getCanalName(), canal.getCanalName());
-        assertEquals(this.subscriptionResponseDto.getAddressDto().getStatus(), Status.fromText(active.getIsActive()).get());
+        assertEquals(this.subscriptionResponseDto.getAddressDto().getStatus(),this.subscriberDto.getMainAddress().getStatus());
 
     }
 
@@ -93,7 +96,7 @@ public class SubscriptionSteps extends AbstractSteps {
         mockServerGet.verify();
 
         assertEquals(addressResponse.getName(),subscriberDto.getMainAddress().getName());
-        assertEquals(addressResponse.getStatus(),Status.fromText(active.getIsActive()).get());
+        assertEquals(addressResponse.getStatus(),this.subscriberDto.getMainAddress().getStatus());
 
         // verifiaction de changement d'adresse dans tous les contracts liée a cette adresse
         MockRestServiceServer mockServer = subscriptionServiceMock.getContractBySubscriber( this.subscriptionResponseDto.getId());
@@ -102,7 +105,7 @@ public class SubscriptionSteps extends AbstractSteps {
 
         this.contractsSubscriberResponseDto.getContractDtos().forEach(contract -> {
             assertEquals(contract.getAddress().getName(),subscriberDto.getMainAddress().getName());
-            assertEquals(contract.getAddress().getStatus(), Status.fromText(active.getIsActive()).get());
+            assertEquals(contract.getAddress().getStatus(), this.subscriberDto.getMainAddress().getStatus());
         });
         assertEquals(this.contractsSubscriberResponseDto.getIdSubscriber(), this.subscriptionResponseDto.getId());
     }
